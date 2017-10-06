@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What time is it?</title>
+</head>
+<body>
+	<script>
+		window.addEventListener("load", function (){
+
+			var its_time = WhatTimeIsIt;
+
+			var results = its_time.convert("5:00") + "<br>"
+			results += its_time.convert("5:01") + "<br>";
+			results += its_time.convert("5:08") + "<br>";
+			results += its_time.convert("5:10") + "<br>";
+			results += its_time.convert("5:18") + "<br>";
+			results += its_time.convert("5:25") + "<br>";
+			results += its_time.convert("5:30") + "<br>";
+			results += its_time.convert("5:35") + "<br>";
+			results += its_time.convert("5:40") + "<br>";
+			results += its_time.convert("5:45") + "<br>";
+			results += its_time.convert("5:59") + "<br>";
+			results += its_time.convert("12:40") + "<br>";
+			results += its_time.convert("12:56") + "<br>";
+
+
+			document.querySelector("body").innerHTML = results;
+
+		});
+	</script>
+	<script src="what_time_is_it.js"></script>
+</body>
+</html>
